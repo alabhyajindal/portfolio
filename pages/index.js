@@ -14,8 +14,8 @@ export default function Home() {
           development.
         </p>
         <p>
-          Some of my favorite technologies include Next.js, Tailwind CSS and
-          Supabase. I also try to contribute to Open Source. I consider this{' '}
+          Next.js, Tailwind CSS and Supabase are some of my favorite
+          technologies. I also try to contribute to Open Source. I consider this{' '}
           <a
             className='link'
             target='_blank'
@@ -103,12 +103,7 @@ export default function Home() {
         </h1>
         <p className='text-slate-600 font-medium text-lg space-y-3 tracking-tight'>
           You can reach out to me on{' '}
-          <a
-            className='link'
-            target='_blank'
-            rel='noreferrer'
-            href='mailto:alabhya10@gmail.com'
-          >
+          <a className='link' target='_blank' href='mailto:alabhya10@gmail.com'>
             Email
           </a>
           ,{' '}
@@ -129,7 +124,7 @@ export default function Home() {
           >
             LinkedIn
           </a>
-          . The source code of all my projects are available on{' '}
+          . The source code for all my projects are available on{' '}
           <a
             className='link'
             target='_blank'
