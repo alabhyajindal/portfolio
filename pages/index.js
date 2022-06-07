@@ -1,65 +1,103 @@
 import Link from 'next/link';
+import Image from 'next/image';
+import ProjectCard from '../components/ProjectCard';
 
 export default function Home() {
   return (
     <div id='main'>
-      <div className='text-slate-600 font-medium max-w-lg text-lg space-y-3'>
+      <div className='text-slate-600 font-medium text-lg space-y-3 tracking-tight'>
         <p>
-          Hey, I'm Alabhya. I live in Khliehriat, Meghalaya. I enjoy using
-          JavaScript and I'm always working on something. Right now I am
-          expanding my skillsets by learning TypeScript.
+          Hey, I&apos;m Alabhya. I live in Khliehriat, Meghalaya. I love
+          programming and have been doing it sporadically for over 10 years! I
+          got started with Logo and have worked with Visual Basic, Python, Java
+          and C over the years. These days, my main focus is on frontend web
+          development.
         </p>
         <p>
           Some of my favorite technologies include Next.js, Tailwind CSS and
-          Supabase. I also try and contribute to Open Source. I consider this{' '}
-          <a className='link' href='https://github.com/mdn/content/pull/15635'>
+          Supabase. I also try to contribute to Open Source. I consider this{' '}
+          <a
+            className='link'
+            target='_blank'
+            rel='noreferrer'
+            href='https://github.com/mdn/content/pull/15635'
+          >
             PR
           </a>{' '}
-          on{' '}
-          <a className='link' href='https://github.com/mdn'>
-            MDN
-          </a>{' '}
-          important. I am big believer of learning in public and share my
+          important. I am a big believer of learning in public and share my
           progress on{' '}
-          <a className='link' href='https://twitter.com/alabhyajindal'>
+          <a
+            className='link'
+            target='_blank'
+            rel='noreferrer'
+            href='https://twitter.com/alabhyajindal'
+          >
             Twitter
           </a>
           .
         </p>
         <p>
           I am currently a student of the Full Stack Development Bootcamp at{' '}
-          <a className='link' href='https://devsnest.in/'>
+          <a
+            className='link'
+            target='_blank'
+            rel='noreferrer'
+            href='https://devsnest.in/'
+          >
             Devsnest
           </a>
           . I graduated from{' '}
-          <a className='link' href='https://christuniversity.in/'>
+          <a
+            className='link'
+            target='_blank'
+            rel='noreferrer'
+            href='https://christuniversity.in/'
+          >
             Christ University
           </a>{' '}
-          in 2020 and worked at{' '}
-          <a className='link' href='https://www.zwende.com/'>
+          in 2020, and worked at{' '}
+          <a
+            className='link'
+            target='_blank'
+            rel='noreferrer'
+            href='https://www.zwende.com/'
+          >
             Zwende
           </a>{' '}
-          prior to this.
+          and{' '}
+          <a
+            className='link'
+            target='_blank'
+            rel='noreferrer'
+            href='https://www.jaaga.in/'
+          >
+            Jaaga
+          </a>{' '}
+          in the past.
         </p>
         <p>I love running, reading books and drinking coffee (medium roast)!</p>
       </div>
-      <h1 className='mt-4 text-4xl font-sans font-semibold select-none tracking-tighter'>
-        Projects
-      </h1>
-      <Link href='/visits'>
-        <a>
-          <h3 className='text-3xl text-fuchsia-500 font-sans font-medium select-none tracking-tighter'>
-            Visits
-          </h3>
-        </a>
-      </Link>
-      <Link href='/searchselect'>
-        <a>
-          <h3 className='text-3xl text-fuchsia-500 font-sans font-medium select-none tracking-tighter'>
-            Search Select
-          </h3>
-        </a>
-      </Link>
+      <div>
+        <h1 className='mt-8 text-4xl font-sans font-semibold select-none tracking-tighter'>
+          Projects
+        </h1>
+        <div className='mt-6 space-y-6'>
+          <ProjectCard
+            title='Visits'
+            desc='An online platform to connect companies offering industrial visits with students seeking them.'
+            page='/visits'
+            img='/visits/landing.png'
+          />
+          <ProjectCard
+            title='Search Select'
+            desc='A lightweight browser extension to navigate and view search results
+        quickly with shortcuts.'
+            page='/searchselect'
+            img='/searchselect/landing.png'
+          />
+        </div>
+      </div>
+
       {/* <h1 className='text-3xl text-slate-700'>Say hello!</h1> */}
       <style jsx>{`
         #main {
