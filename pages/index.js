@@ -103,7 +103,7 @@ export default function Home() {
         </h1>
         <p className='text-slate-600 font-medium text-lg space-y-3 tracking-tight'>
           You can reach out to me on{' '}
-          <a className='link' target='_blank' href='mailto:alabhya10@gmail.com'>
+          <a className='link' href='mailto:alabhya10@gmail.com'>
             Email
           </a>
           ,{' '}

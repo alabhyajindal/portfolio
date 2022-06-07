@@ -34,6 +34,7 @@ export default function ProjectCard({ title, desc, page, img }) {
               layout='fill'
               objectFit='contain'
               className='rounded-md'
+              alt={`Screenshot of the ${title} project`}
             />
           </div>
         </a>
