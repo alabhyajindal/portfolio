@@ -101,7 +101,7 @@ export default function Home() {
         <h1 className='text-4xl font-sans font-semibold select-none tracking-tighter'>
           Say hello!
         </h1>
-        <p className='text-slate-600 font-medium text-lg tracking-tight'>
+        <p className='text-slate-600 font-medium text-lg tracking-tight mt-2'>
           You can reach out to me on{' '}
           <a className='link' href='mailto:alabhya10@gmail.com'>
             Email
