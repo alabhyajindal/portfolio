@@ -8,12 +8,14 @@ export default function ProjectCard({ title, desc, page, img }) {
 
   function addStyles() {
     viewRef.current.classList.add('text-fuchsia-400');
+    imgRef.current.classList.remove('shadow-md');
     imgRef.current.classList.add('shadow-xl');
     imgRef.current.classList.add('-translate-y-1');
   }
   function removeStyles() {
     viewRef.current.classList.remove('text-fuchsia-400');
     imgRef.current.classList.remove('shadow-xl');
+    imgRef.current.classList.add('shadow-md');
     imgRef.current.classList.remove('-translate-y-1');
   }
 

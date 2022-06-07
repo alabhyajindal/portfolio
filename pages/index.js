@@ -55,7 +55,7 @@ export default function Home() {
           >
             Christ University
           </a>{' '}
-          in 2020, and worked at{' '}
+          in 2020. I have worked at{' '}
           <a
             className='link'
             target='_blank'
@@ -77,8 +77,8 @@ export default function Home() {
         </p>
         <p>I love running, reading books and drinking medium roast coffee!</p>
       </div>
-      <div>
-        <h1 className='mt-8 text-4xl font-sans font-semibold select-none tracking-tighter'>
+      <div className='mt-8'>
+        <h1 className='text-4xl font-sans font-semibold select-none tracking-tighter'>
           Projects
         </h1>
         <div className='mt-6 space-y-8'>
@@ -97,7 +97,50 @@ export default function Home() {
         </div>
       </div>
 
-      {/* <h1 className='text-3xl text-slate-700'>Say hello!</h1> */}
+      <div className='mt-8'>
+        <h1 className='text-4xl font-sans font-semibold select-none tracking-tighter'>
+          Say hello!
+        </h1>
+        <p className='text-slate-600 font-medium text-lg space-y-3 tracking-tight'>
+          You can reach out to me on{' '}
+          <a
+            className='link'
+            target='_blank'
+            rel='noreferrer'
+            href='mailto:alabhya10@gmail.com'
+          >
+            Email
+          </a>
+          ,{' '}
+          <a
+            className='link'
+            target='_blank'
+            rel='noreferrer'
+            href='https://twitter.com/alabhyajindal'
+          >
+            Twitter
+          </a>{' '}
+          or{' '}
+          <a
+            className='link'
+            target='_blank'
+            rel='noreferrer'
+            href='https://www.linkedin.com/in/alabhyajindal/'
+          >
+            LinkedIn
+          </a>
+          . The source code of all my projects are available on{' '}
+          <a
+            className='link'
+            target='_blank'
+            rel='noreferrer'
+            href='https://github.com/alabhyajindal'
+          >
+            GitHub
+          </a>
+          .
+        </p>
+      </div>
       <style jsx>{`
         #main {
           -webkit-tap-highlight-color: transparent;
