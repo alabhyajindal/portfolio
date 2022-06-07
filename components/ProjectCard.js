@@ -1,14 +1,33 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRef } from 'react';
 
 export default function ProjectCard({ title, desc, page, img }) {
+  const imgRef = useRef(null);
+  const viewRef = useRef(null);
+
+  function addStyles() {
+    viewRef.current.classList.add('text-fuchsia-400');
+    imgRef.current.classList.add('shadow-xl');
+    imgRef.current.classList.add('-translate-y-1');
+  }
+  function removeStyles() {
+    viewRef.current.classList.remove('text-fuchsia-400');
+    imgRef.current.classList.remove('shadow-xl');
+    imgRef.current.classList.remove('-translate-y-1');
+  }
+
   return (
-    <div className='lg:flex lg:gap-4 lg:items-center'>
+    <div className='lg:flex lg:gap-6 lg:items-center active:scale-95 transition duration-150'>
       <Link href={page}>
         <a>
-          <div className='relative w-96 h-96 shadow-md rounded-md'>
+          <div
+            ref={imgRef}
+            className='relative w-96 h-96 shadow-md rounded-md transition duration-150'
+          >
             <Image
-              id='img'
+              onMouseEnter={addStyles}
+              onMouseLeave={removeStyles}
               src={img}
               layout='fill'
               objectFit='contain'
@@ -27,8 +46,10 @@ export default function ProjectCard({ title, desc, page, img }) {
         <Link href={page}>
           <a>
             <p
-              id='view'
-              className='inline-block uppercase text-fuchsia-500 font-bold text-sm mt-2'
+              ref={viewRef}
+              onMouseEnter={addStyles}
+              onMouseLeave={removeStyles}
+              className='inline-block uppercase text-fuchsia-500 font-bold text-sm mt-2 transition duration-150'
             >
               View Project
             </p>

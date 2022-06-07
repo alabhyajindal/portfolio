@@ -75,13 +75,13 @@ export default function Home() {
           </a>{' '}
           in the past.
         </p>
-        <p>I love running, reading books and drinking coffee (medium roast)!</p>
+        <p>I love running, reading books and drinking medium roast coffee!</p>
       </div>
       <div>
         <h1 className='mt-8 text-4xl font-sans font-semibold select-none tracking-tighter'>
           Projects
         </h1>
-        <div className='mt-6 space-y-6'>
+        <div className='mt-6 space-y-8'>
           <ProjectCard
             title='Visits'
             desc='An online platform to connect companies offering industrial visits with students seeking them.'
@@ -90,8 +90,7 @@ export default function Home() {
           />
           <ProjectCard
             title='Search Select'
-            desc='A lightweight browser extension to navigate and view search results
-        quickly with shortcuts.'
+            desc='A lightweight browser extension to navigate and view search results using keyboard shortcuts.'
             page='/searchselect'
             img='/searchselect/landing.png'
           />
