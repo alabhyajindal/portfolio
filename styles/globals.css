@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400 900;
+  font-display: optional;
+  src: url(/fonts/Inter-roman.latin.var.woff2) format('woff2');
+}
+
+@layer components {
+  .link {
+    @apply text-fuchsia-500 hover:text-fuchsia-400;
+  }
+}

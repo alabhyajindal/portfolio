@@ -5,6 +5,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          <meta charSet='UTF-8' />
           <link
             rel='preload'
             href='/fonts/Inter-roman.latin.var.woff2'
