@@ -13,7 +13,7 @@ export default function visits() {
           app provides seamless magic link authentication. The user can list or
           book visits after they have signed in. I have done both the design and
           development of the project from scratch. I took design inspiration
-          from the Stripe and Airbnb's website.
+          from the Stripe and Airbnb&apos;s website.
         </p>
         <p>
           The project is created with Next.js, JavaScript, PostgreSQL, Supabase,
@@ -50,7 +50,7 @@ export default function visits() {
             myself when I was in college. Right now there exists no platform
             where students can look up companies offering industrial visits and
             book them. The current process involves arranging industrial visits
-            based on personal connections - which is not the right way. Everyone
+            based on personal connections. This is not the right way, everyone
             should be aware of companies offering visits and be able to book it
             seamlessly.
           </p>
