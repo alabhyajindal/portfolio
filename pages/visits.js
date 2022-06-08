@@ -32,7 +32,7 @@ export default function visits() {
           </a>
         </div>
       </div>
-      <div className='mt-8 relative aspect-[15.9/7.9] bg-fuchsia-200 rounded-md shadow-md'>
+      <div className='mt-8 relative aspect-[15.9/7.9] bg-fuchsia-200 rounded-md shadow-md border'>
         <Image
           src='/visits/screen1.png'
           layout='fill'
@@ -64,7 +64,7 @@ export default function visits() {
           <p>Few important features of the applications include:</p>
         </div>
       </div>
-      <div className='mt-8 relative aspect-[15.9/7.9] bg-fuchsia-200 rounded-md shadow-md'>
+      <div className='mt-8 relative aspect-[15.9/7.9] bg-fuchsia-200 rounded-md shadow-md border'>
         <Image
           src='/visits/screen0.png'
           layout='fill'
@@ -72,7 +72,7 @@ export default function visits() {
           className='rounded-md'
         />
       </div>
-      <div className='mt-8 relative aspect-[15.9/7.9] bg-fuchsia-200 rounded-md shadow-md'>
+      <div className='mt-8 relative aspect-[15.9/7.9] bg-fuchsia-200 rounded-md shadow-md border'>
         <Image
           src='/visits/screen3.png'
           layout='fill'
@@ -80,7 +80,7 @@ export default function visits() {
           className='rounded-md'
         />
       </div>
-      <div className='mt-8 relative aspect-[15.9/7.9] bg-fuchsia-200 rounded-md shadow-md'>
+      <div className='mt-8 relative aspect-[15.9/7.9] bg-fuchsia-200 rounded-md shadow-md border'>
         <Image
           src='/visits/screen4.png'
           layout='fill'
@@ -88,7 +88,7 @@ export default function visits() {
           className='rounded-md'
         />
       </div>
-      <div className='mt-8 relative aspect-[15.9/7.9] bg-fuchsia-200 rounded-md shadow-md'>
+      <div className='mt-8 relative aspect-[15.9/7.9] bg-fuchsia-200 rounded-md shadow-md border'>
         <Image
           src='/visits/screen5.png'
           layout='fill'
@@ -97,7 +97,7 @@ export default function visits() {
         />
       </div>
       {/* Explore feed screenshot */}
-      <div className='mt-8 relative aspect-[15.9/7.9] bg-fuchsia-200 rounded-md shadow-md'>
+      <div className='mt-8 relative aspect-[15.9/7.9] bg-fuchsia-200 rounded-md shadow-md border'>
         <Image
           src='/visits/screen2.png'
           layout='fill'
