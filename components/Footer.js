@@ -1,7 +1,7 @@
 export default function Footer() {
   const date = new Date().getFullYear();
   return (
-    <footer className='px-4 py-4 flex justify-between items-center'>
+    <footer id='footer' className='px-4 py-4 flex justify-between items-center'>
       <p className='text-slate-500 tracking-tight'>
         Alabhya Jindal &copy; {date}
       </p>
@@ -47,6 +47,11 @@ export default function Footer() {
           />
         </a>
       </div>
+      <style jsx>{`
+        #footer {
+          -webkit-tap-highlight-color: transparent;
+        }
+      `}</style>
     </footer>
   );
 }
