@@ -34,7 +34,7 @@ export default function visits() {
       </div>
       <div className='mt-8 relative aspect-[15.9/7.9] bg-fuchsia-200 rounded-md shadow-md border'>
         <Image
-          src='/visits/screen1.png'
+          src='/visits/screen6.png'
           layout='fill'
           objectFit='contain'
           className='rounded-md'
@@ -74,6 +74,14 @@ export default function visits() {
       </div>
       <div className='mt-8 relative aspect-[15.9/7.9] bg-fuchsia-200 rounded-md shadow-md border'>
         <Image
+          src='/visits/screen1.png'
+          layout='fill'
+          objectFit='contain'
+          className='rounded-md'
+        />
+      </div>
+      <div className='mt-8 relative aspect-[15.9/7.9] bg-fuchsia-200 rounded-md shadow-md border'>
+        <Image
           src='/visits/screen3.png'
           layout='fill'
           objectFit='contain'
@@ -96,7 +104,7 @@ export default function visits() {
           className='rounded-md'
         />
       </div>
-      {/* Explore feed screenshot */}
+
       <div className='mt-8 relative aspect-[15.9/7.9] bg-fuchsia-200 rounded-md shadow-md border'>
         <Image
           src='/visits/screen2.png'
