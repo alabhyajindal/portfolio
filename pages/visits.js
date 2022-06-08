@@ -123,20 +123,32 @@ export default function visits() {
           <p>
             The details of the cards on the{' '}
             <a
+              className='link'
               href='https://visits.vercel.app/explore'
               target='_blank'
               rel='noreferrer'
             >
               Explore
             </a>{' '}
-            page are being fetched from a PostgreSQL database. This way, the
-            users can list visits on the platform and it shows up immediately on
-            the page. The great thing is that the landing page for the newly
-            created visit is generated automatically as well. I am using
-            Incremental Static Regeneration and Dynamic Routing to make this
-            work.
-            {/* Expand on the above */}
+            page are being fetched from a PostgreSQL database hosted on
+            Supabase. I am using the <code>getServerSideProps</code> function
+            provided by Next.js to fetch the data from the database on the
+            Server and pass it to the component rendering the cards. This is
+            what the code to fetch the data of all visits looks like:
+            {/* Add alt to all screenshots on this page */}
           </p>
+          <pre>
+            <code>
+              {`
+          export async function getServerSideProps() {
+            const visits = await prisma.visit.findMany();
+            return {
+              props: { visits: JSON.parse(JSON.stringify(visits)) },
+            };
+          }
+          `}
+            </code>
+          </pre>
         </div>
       </div>
 
@@ -147,10 +159,11 @@ export default function visits() {
         <div className='text-slate-600 font-medium text-lg space-y-3 tracking-tight mt-2'>
           <p>
             I have made this project with the aim of having it used by actual
-            users. I haven't talked to users who have this problem yet but I
-            plan to do that. There are lots of improvements needed in the app,
-            especially in user onboarding and the process of listing and booking
-            visits.
+            users. I plan to reach out to target users, students and companies,
+            to find out if they have this problem. There are lots of
+            improvements needed in the app, especially in user onboarding and
+            the process of listing and booking visits before I could look at
+            user acquisition.
           </p>
         </div>
       </div>
@@ -161,17 +174,23 @@ export default function visits() {
         </h2>
         <div className='text-slate-600 font-medium text-lg space-y-3 tracking-tight mt-2'>
           <p>
-            I have developed a great understanding about how to combine
-            multitude of different technologies together to deliver a great UX.
-            I really enjoyed using Supabase, especially the Auth features which
-            are way easier to set up and use than alternatives like NextAuth.js.
-            Using a BaaS like Supabase drastically reduces development time.
+            This project helped me develop a great understanding about combining
+            different technologies together to deliver a great UX. I learned to
+            use Supabase Auth, which is way easier to set up and use than
+            alternatives like NextAuth.js. I experienced how using a BaaS like
+            Supabase drastically reduces development time.
           </p>
           <p>
             I learned to model data using Prisma which allowed for faster
-            iterations. Working on the project has improved my design skills as
-            I researched quite a bit on how the different pages for the website
-            should look.
+            iterations. Working on this project has also improved my design
+            skills as I researched quite a bit on how the different pages for
+            the website should look and then designed everything from scratch.
+          </p>
+          <p>
+            I also realized that it's bad to build a user centric app without
+            talking to users first. In the future, when I execute on one of my
+            ideas I will talk to users first to understand if they actually face
+            the problem before building out the solution.
           </p>
         </div>
       </div>
