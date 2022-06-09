@@ -10,8 +10,7 @@ export default function searchselect() {
         <p>
           Search Select is a lightweight browser extension available for Chrome
           that allows users to select and view search results quickly with
-          shortcuts. The extension is available on the Chrome Web Store. I
-          wanted to quickly
+          shortcuts.
         </p>
         <p>
           The project is created with JavaScript, HTML, CSS and the Chrome Web
@@ -34,10 +33,9 @@ export default function searchselect() {
           </a>
         </div>
       </div>
-      {/* Replace below with a video tour */}
       <div className='mt-8 relative aspect-[16/9] bg-fuchsia-200 rounded-md shadow-md border'>
         <Image
-          src='/searchselect/screen0.png'
+          src='/searchselect/screen4.jpg'
           layout='fill'
           objectFit='contain'
           className='rounded-md'
@@ -52,6 +50,14 @@ export default function searchselect() {
         </div>
       </div>
 
+      <div className='mt-8 relative aspect-[16/9] bg-fuchsia-200 rounded-md shadow-md border'>
+        <Image
+          src='/searchselect/screen0.png'
+          layout='fill'
+          objectFit='contain'
+          className='rounded-md'
+        />
+      </div>
       <div className='mt-8 relative aspect-[16/9] bg-fuchsia-200 rounded-md shadow-md border'>
         <Image
           src='/searchselect/screen1.jpg'
