@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-export default function visits() {
+export default function Visits() {
   return (
     <div>
       <h1 className='text-4xl text-fuchsia-500 font-sans font-semibold select-none tracking-tighter'>
@@ -31,7 +31,7 @@ export default function visits() {
           </a>
         </div>
       </div>
-      {/* Replace below with a video tour */}
+
       <div className='mt-8 relative aspect-[15.9/7.9] bg-fuchsia-200 rounded-md shadow-md border'>
         <Image
           src='/visits/screen6.png'

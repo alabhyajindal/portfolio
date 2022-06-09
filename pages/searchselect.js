@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-export default function searchselect() {
+export default function Searchselect() {
   return (
     <div>
       <h1 className='text-4xl text-fuchsia-500 font-sans font-semibold select-none tracking-tighter'>
@@ -101,7 +101,10 @@ export default function searchselect() {
           What I learned
         </h2>
         <div className='text-slate-600 font-medium text-lg space-y-3 tracking-tight mt-2'>
-          <p>Add lessons</p>
+          <p>
+            When I got the idea to create Search Select, I had no idea how to
+            create a browser extension.
+          </p>
         </div>
       </div>
     </div>
