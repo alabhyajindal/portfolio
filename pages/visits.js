@@ -20,13 +20,19 @@ export default function Visits() {
         </p>
         <div className='flex gap-6 uppercase text-fuchsia-500 font-bold text-base'>
           <a
+            className='hover:text-fuchsia-400'
             href='https://github.com/alabhyajindal/visit'
             target='_blank'
             rel='noreferrer'
           >
             Source Code
           </a>
-          <a href='https://visits.vercel.app/' target='_blank' rel='noreferrer'>
+          <a
+            className='hover:text-fuchsia-400'
+            href='https://visits.vercel.app/'
+            target='_blank'
+            rel='noreferrer'
+          >
             Live Site
           </a>
         </div>
@@ -38,6 +44,7 @@ export default function Visits() {
           layout='fill'
           objectFit='contain'
           className='rounded-md'
+          alt='Screenshot of the Visits explore page.'
         />
       </div>
       <div className='mt-8'>
@@ -63,6 +70,7 @@ export default function Visits() {
           layout='fill'
           objectFit='contain'
           className='rounded-md'
+          alt='Screenshot of the Visits homepage.'
         />
       </div>
       <div className='mt-8 relative aspect-[15.9/7.9] bg-fuchsia-200 rounded-md shadow-md border'>
@@ -71,6 +79,7 @@ export default function Visits() {
           layout='fill'
           objectFit='contain'
           className='rounded-md'
+          alt='Screenshot of the Visits homepage with the options to Host or Find a Visit.'
         />
       </div>
       <div className='mt-8 relative aspect-[15.9/7.9] bg-fuchsia-200 rounded-md shadow-md border'>
@@ -79,6 +88,7 @@ export default function Visits() {
           layout='fill'
           objectFit='contain'
           className='rounded-md'
+          alt='Screenshot of the Visits homepage with the Sign in modal window open, prompting the user to enter their Email address.'
         />
       </div>
       <div className='mt-8 relative aspect-[15.9/7.9] bg-fuchsia-200 rounded-md shadow-md border'>
@@ -87,6 +97,7 @@ export default function Visits() {
           layout='fill'
           objectFit='contain'
           className='rounded-md'
+          alt='Screenshot of an Inbox with a mail from Supabase titled Magic Link. The mail body consists of a link which the user is asked to follow to log in.'
         />
       </div>
 
@@ -96,6 +107,7 @@ export default function Visits() {
           layout='fill'
           objectFit='contain'
           className='rounded-md'
+          alt='Screenshot of the Visits profile creation page which consists of two form inputs for First Name and Last Name.'
         />
       </div>
       <div className='mt-8 relative aspect-[15.9/7.9] bg-fuchsia-200 rounded-md shadow-md border'>
@@ -104,6 +116,7 @@ export default function Visits() {
           layout='fill'
           objectFit='contain'
           className='rounded-md'
+          alt='Screenshot of the Visits List a visit page with the form inputs of Title, Description, City, Duration, Maximum visitors, Price and a file prompt.'
         />
       </div>
       <div className='mt-8 relative aspect-[15.9/7.9] bg-fuchsia-200 rounded-md shadow-md border'>
@@ -112,6 +125,7 @@ export default function Visits() {
           layout='fill'
           objectFit='contain'
           className='rounded-md'
+          alt='Screenshot of the Visits explore page.'
         />
       </div>
       <div className='mt-8 relative aspect-[15.9/7.9] bg-fuchsia-200 rounded-md shadow-md border'>
@@ -120,6 +134,7 @@ export default function Visits() {
           layout='fill'
           objectFit='contain'
           className='rounded-md'
+          alt='Screenshot of the Supabase dashboard displaying data about the Visits platform over the past 7 days: API Requests: 32, Auth Requests: 5, Storage Requests: 25 and Connection Requests: 0.'
         />
       </div>
 
@@ -141,25 +156,21 @@ export default function Visits() {
             page are being fetched from a PostgreSQL database hosted on
             Supabase. I am using the <code>getServerSideProps</code> function
             provided by Next.js to fetch the data from the database on the
-            Server and pass it to the component rendering the cards. This is
-            what the code to fetch the data of all visits looks like:
+            Server and pass it to the component rendering the cards. This
+            results in a fast user experience as the data is already fetched on
+            the server.
             {/* Add alt to all screenshots on this page */}
           </p>
-          <pre>
-            <code>
-              {`
-          export async function getServerSideProps() {
-            const visits = await prisma.visit.findMany();
-            return {
-              props: { visits: JSON.parse(JSON.stringify(visits)) },
-            };
-          }
-          `}
-            </code>
-          </pre>
+
           <p>
-            Explain dynamic routing and SSG. It should be clear how the below
-            page is created on the fly once a user lists a visit.
+            I am making use of dynamic routing for all the visits listed on the
+            platform. This is done by using the square bracket notation provided
+            by Next.js. Finally, I am using <code>getStaticProps</code> to pass
+            in the data to the component with the matching <code>id</code> and{' '}
+            <code>getStaticPaths</code> to tell Next.js which routes to
+            statically generate during build time. Incremental Static
+            Regeneration is enabled by setting <code>fallback: blocking</code>{' '}
+            in the <code>getStaticPaths</code> function.
           </p>
         </div>
         <div className='mt-8 relative aspect-[15.9/7.9] bg-fuchsia-200 rounded-md shadow-md border'>
@@ -168,6 +179,7 @@ export default function Visits() {
             layout='fill'
             objectFit='contain'
             className='rounded-md'
+            alt='Screenshot of one of the visits listed on the Visits platform.'
           />
         </div>
       </div>
@@ -207,10 +219,10 @@ export default function Visits() {
             the website should look and then designed everything from scratch.
           </p>
           <p>
-            I also realized that it's bad to build a user centric app without
-            talking to users first. In the future, when I execute on one of my
-            ideas I will talk to users first to understand if they actually face
-            the problem before building out the solution.
+            I also realized that it&apos;s bad to build a user centric app
+            without talking to users first. In the future, when I execute on one
+            of my ideas I will talk to users first to understand if they
+            actually face the problem before building out the solution.
           </p>
         </div>
       </div>
