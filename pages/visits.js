@@ -8,15 +8,14 @@ export default function visits() {
       </h1>
       <div className='text-slate-600 font-medium text-lg space-y-3 tracking-tight mt-2'>
         <p>
-          Visits is a Next.js application that enables companies offering
-          industrial visits to list their offerings which students can book. The
-          app provides seamless magic link authentication. The user can list or
-          book visits after they have signed in. I have done both the design and
-          development of the project from scratch. I took design inspiration
-          from Stripe and Airbnb&apos;s website.
+          Visits is a serverless application that enables companies to list
+          their industrial visit offerings which can then be booked by students.
+          The app provides seamless magic link authentication. The user can list
+          or book visits after they have signed in. I have worked on both the
+          design and development of the project from scratch.
         </p>
         <p>
-          The project is created with Next.js, JavaScript, PostgreSQL, Supabase,
+          Visits is created with Next.js, JavaScript, PostgreSQL, Supabase,
           Prisma, Tailwind CSS and Stripe.
         </p>
         <div className='flex gap-6 uppercase text-fuchsia-500 font-bold text-base'>
@@ -90,9 +89,18 @@ export default function visits() {
           className='rounded-md'
         />
       </div>
+
       <div className='mt-8 relative aspect-[15.9/7.9] bg-fuchsia-200 rounded-md shadow-md border'>
         <Image
           src='/visits/screen5.png'
+          layout='fill'
+          objectFit='contain'
+          className='rounded-md'
+        />
+      </div>
+      <div className='mt-8 relative aspect-[15.9/7.9] bg-fuchsia-200 rounded-md shadow-md border'>
+        <Image
+          src='/visits/screen8.png'
           layout='fill'
           objectFit='contain'
           className='rounded-md'
@@ -149,6 +157,18 @@ export default function visits() {
           `}
             </code>
           </pre>
+          <p>
+            Explain dynamic routing and SSG. It should be clear how the below
+            page is created on the fly once a user lists a visit.
+          </p>
+        </div>
+        <div className='mt-8 relative aspect-[15.9/7.9] bg-fuchsia-200 rounded-md shadow-md border'>
+          <Image
+            src='/visits/screen7.png'
+            layout='fill'
+            objectFit='contain'
+            className='rounded-md'
+          />
         </div>
       </div>
 

@@ -7,7 +7,12 @@ export default function searchselect() {
         Search Select
       </h1>
       <div className='text-slate-600 font-medium text-lg space-y-3 tracking-tight mt-2'>
-        <p>Add intro</p>
+        <p>
+          Search Select is a lightweight browser extension available for Chrome
+          that allows users to select and view search results quickly with
+          shortcuts. The extension is available on the Chrome Web Store. I
+          wanted to quickly
+        </p>
         <p>
           The project is created with JavaScript, HTML, CSS and the Chrome Web
           APIs.
@@ -30,9 +35,9 @@ export default function searchselect() {
         </div>
       </div>
       {/* Replace below with a video tour */}
-      <div className='mt-8 relative aspect-[15.9/7.9] bg-fuchsia-200 rounded-md shadow-md border'>
+      <div className='mt-8 relative aspect-[16/9] bg-fuchsia-200 rounded-md shadow-md border'>
         <Image
-          src='/visits/screen6.png'
+          src='/searchselect/screen0.png'
           layout='fill'
           objectFit='contain'
           className='rounded-md'
@@ -47,10 +52,17 @@ export default function searchselect() {
         </div>
       </div>
 
-      {/* Replace image and add more if needed */}
-      <div className='mt-8 relative aspect-[15.9/7.9] bg-fuchsia-200 rounded-md shadow-md border'>
+      <div className='mt-8 relative aspect-[16/9] bg-fuchsia-200 rounded-md shadow-md border'>
         <Image
-          src='/visits/screen0.png'
+          src='/searchselect/screen1.jpg'
+          layout='fill'
+          objectFit='contain'
+          className='rounded-md'
+        />
+      </div>
+      <div className='mt-8 relative aspect-[16/9] bg-fuchsia-200 rounded-md shadow-md border'>
+        <Image
+          src='/searchselect/screen2.jpg'
           layout='fill'
           objectFit='contain'
           className='rounded-md'
