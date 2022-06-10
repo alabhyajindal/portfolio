@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Image from 'next/image';
 
 export default function Searchselect() {
@@ -9,6 +10,9 @@ export default function Searchselect() {
 
   return (
     <div>
+      <Head>
+        <title>Search Select</title>
+      </Head>
       <h1 className='text-4xl text-fuchsia-500 font-sans font-semibold select-none tracking-tighter'>
         Search Select
       </h1>

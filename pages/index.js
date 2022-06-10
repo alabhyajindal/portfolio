@@ -1,8 +1,12 @@
+import Head from 'next/head';
 import ProjectCard from '../components/ProjectCard';
 
 export default function Home() {
   return (
     <div id='main'>
+      <Head>
+        <title>Alabhya Jindal&apos;s portfolio</title>
+      </Head>
       <div className='text-slate-600 font-medium text-lg space-y-3 tracking-tight'>
         <p>
           Hey, I&apos;m Alabhya. I live in Khliehriat, Meghalaya. I love
