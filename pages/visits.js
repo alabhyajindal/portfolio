@@ -190,12 +190,13 @@ export default function Visits() {
         </h2>
         <div className='text-slate-600 font-medium text-lg space-y-3 tracking-tight mt-2'>
           <p>
-            I have made this project with the aim of having it used by actual
-            users. I plan to reach out to target users, students and companies,
-            to find out if they have this problem. There are lots of
-            improvements needed in the app, especially in user onboarding and
-            the process of listing and booking visits before I could look at
-            user acquisition.
+            I started this project with the aim of having it being used by
+            actual users. After a couple of interactions with a few companies I
+            have realized that this is not much of a problem. Also, there are
+            lots of improvements needed in the app, especially in user
+            onboarding and the process of listing and booking visits. However,
+            I&apos;m not focusing on this project right now and I'm working on
+            other exciting things!
           </p>
         </div>
       </div>
