@@ -96,14 +96,14 @@ export default function Searchselect() {
             navigation actions. It looked like this:
           </p>
           <code className='block'>
-            let scrollDownKey = 's';
+            let scrollDownKey = &apos;s&apos;;
             <br />
-            let scrollUpKey = 'w'; <br />
-            let scrollTopKey = 'q';
+            let scrollUpKey = &apos;w&apos;; <br />
+            let scrollTopKey = &apos;q&apos;;
           </code>
           <p>
-            Later on I realized that different people might like to use
-            different keys for navigation. I implemented this by using{' '}
+            I realized later that different people might like to use different
+            keys for navigation. I implemented this by using{' '}
             <code>chrome.storage</code>.
           </p>
           <p>

@@ -195,8 +195,8 @@ export default function Visits() {
             have realized that this is not much of a problem. Also, there are
             lots of improvements needed in the app, especially in user
             onboarding and the process of listing and booking visits. However,
-            I&apos;m not focusing on this project right now and I'm working on
-            other exciting things!
+            I&apos;m not focusing on this project right now and I&apos;m working
+            on other exciting things!
           </p>
         </div>
       </div>
