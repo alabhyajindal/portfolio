@@ -1,6 +1,12 @@
 import Image from 'next/image';
 
 export default function Searchselect() {
+  const storageCode = `chrome.storage.sync.get((data) => {
+    scrollDownKey = String(data.down);
+    scrollUpKey = String(data.up);
+    scrollTopKey = String(data.top);
+});`;
+
   return (
     <div>
       <h1 className='text-4xl text-fuchsia-500 font-sans font-semibold select-none tracking-tighter'>
@@ -77,25 +83,61 @@ export default function Searchselect() {
           alt='Screenshot of a Google search results page with the popup menu of the Search Select extension open displaying three options: Settings, Send Feedback and About.'
         />
       </div>
-      <div className='mt-8 relative aspect-[16/9] bg-fuchsia-200 rounded-md shadow-md border'>
-        <Image
-          src='/searchselect/screen2.jpg'
-          layout='fill'
-          objectFit='contain'
-          className='rounded-md'
-          alt='Screenshot of the Search Select settings page displaying a form which can be used by the user to customize the navigation shortcut keys.'
-        />
-      </div>
 
       <div className='mt-8'>
         <h2 className='text-3xl font-sans font-semibold select-none tracking-tighter'>
           Spotlight
         </h2>
         <div className='text-slate-600 font-medium text-lg space-y-3 tracking-tight mt-2'>
-          {/* Add alt to all screenshots on this page */}
           <p>
-            Add one main or difficult feature and explain how it was implemented
+            Making the shortcut navigation keys customizable was the hardest
+            feature to implement in the extension. At the beginning of the
+            project, I hardcoded the keyboard keys which will perform the
+            navigation actions. It looked like this:
           </p>
+          <code className='block'>
+            let scrollDownKey = 's';
+            <br />
+            let scrollUpKey = 'w'; <br />
+            let scrollTopKey = 'q';
+          </code>
+          <p>
+            Later on I realized that different people might like to use
+            different keys for navigation. I implemented this by using{' '}
+            <code>chrome.storage</code>.
+          </p>
+          <p>
+            At installation, a script runs which saves the default values for
+            the shortcut keys to the storage. This is done by using.{' '}
+            <code>chrome.runtime.onInstalled</code>. Now, instead of specifying
+            the value of the keyboard shortcut directly, we refer the variable
+            in the storage:
+          </p>
+          <pre className='overflow-auto'>
+            <code>{storageCode}</code>
+          </pre>
+          <p>
+            Finally, the extension&apos;s{' '}
+            <a
+              href='https://github.com/alabhyajindal/searchselect/blob/main/options.js'
+              target='_blank'
+              rel='noreferrer'
+              className='link'
+            >
+              settings
+            </a>{' '}
+            page allows users to set custom shortcut keys by saving their
+            preferences to <code>chrome.storage</code>.
+          </p>
+        </div>
+        <div className='mt-8 relative aspect-[16/9] bg-fuchsia-200 rounded-md shadow-md border'>
+          <Image
+            src='/searchselect/screen2.jpg'
+            layout='fill'
+            objectFit='contain'
+            className='rounded-md'
+            alt='Screenshot of the Search Select settings page displaying a form which can be used by the user to customize the navigation shortcut keys.'
+          />
         </div>
       </div>
 
@@ -119,7 +161,7 @@ export default function Searchselect() {
         </h2>
         <div className='text-slate-600 font-medium text-lg space-y-3 tracking-tight mt-2'>
           <p>
-            I learned how to create a browser extension from scrach, taking it
+            I learned how to create a browser extension from scratch, taking it
             from an idea to publishing it online for everyone to use. It made me
             appreciate the power of JavaScript even more and made me realize all
             the wonderful things that can be done with it.

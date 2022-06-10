@@ -156,10 +156,10 @@ export default function Visits() {
             page are being fetched from a PostgreSQL database hosted on
             Supabase. I am using the <code>getServerSideProps</code> function
             provided by Next.js to fetch the data from the database on the
-            Server and pass it to the component rendering the cards. This
-            results in a fast user experience as the data is already fetched on
-            the server.
-            {/* Add alt to all screenshots on this page */}
+            Server and pass it to the component rendering the cards. Fetching
+            the data on the server like this results in a fast user experience
+            compared to client-side data fetching (done using{' '}
+            <code>useEffect</code>, for example).
           </p>
 
           <p>
@@ -208,12 +208,12 @@ export default function Visits() {
           <p>
             This project helped me develop a great understanding about combining
             different technologies together to deliver a great UX. I learned to
-            use Supabase Auth, which is way easier to set up and use than
+            use Supabase Auth, which is easier to set up and use than
             alternatives like NextAuth.js. I experienced how using a BaaS like
             Supabase drastically reduces development time.
           </p>
           <p>
-            I learned to model data using Prisma which allowed for faster
+            I learned to model data using Prisma which allows for faster
             iterations. Working on this project has also improved my design
             skills as I researched quite a bit on how the different pages for
             the website should look and then designed everything from scratch.
