@@ -84,7 +84,7 @@ export default function Home() {
         <p>I love running, reading books and drinking medium roast coffee!</p>
       </div>
       <div className='mt-8'>
-        <h1 className='text-4xl font-sans font-semibold select-none tracking-tighter'>
+        <h1 className='text-4xl font-sans font-semibold tracking-tighter'>
           Projects
         </h1>
         <div className='mt-6 space-y-8'>
@@ -108,7 +108,7 @@ export default function Home() {
       </div>
 
       <div className='mt-8'>
-        <h1 className='text-4xl font-sans font-semibold select-none tracking-tighter'>
+        <h1 className='text-4xl font-sans font-semibold tracking-tighter'>
           Say hello!
         </h1>
         <p className='text-slate-600 font-medium text-lg tracking-tight mt-2'>
