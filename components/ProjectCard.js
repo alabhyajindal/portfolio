@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRef } from 'react';
 
-export default function ProjectCard({ title, desc, page, img }) {
+export default function ProjectCard({ title, desc, page, img, stack }) {
   const imgRef = useRef(null);
   const viewRef = useRef(null);
 
@@ -43,8 +43,11 @@ export default function ProjectCard({ title, desc, page, img }) {
         <h3 className='text-3xl mt-4 text-fuchsia-500 font-sans font-medium select-none tracking-tighter'>
           {title}
         </h3>
-        <p className=' text-slate-600 font-medium text-lg tracking-tight'>
+        <p className='text-slate-600 font-medium text-lg tracking-tight'>
           {desc}
+        </p>
+        <p className='text-slate-400 font-medium text-base tracking-tight mt-1'>
+          {stack}
         </p>
         <Link href={page}>
           <a>

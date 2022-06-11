@@ -93,12 +93,16 @@ export default function Home() {
             desc='An online platform to connect companies offering industrial visits with students seeking them.'
             page='/visits'
             img='/visits/landing.png'
+            stack='Created with Next.js, JavaScript, PostgreSQL, Supabase,
+            Prisma, Tailwind CSS and Stripe.'
           />
           <ProjectCard
             title='Search Select'
             desc='A lightweight browser extension to navigate and view search results using keyboard shortcuts.'
             page='/searchselect'
             img='/searchselect/landing.png'
+            stack='Created with JavaScript, HTML, CSS and the Chrome Web
+            APIs.'
           />
         </div>
       </div>
