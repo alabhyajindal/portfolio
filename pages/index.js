@@ -6,6 +6,10 @@ export default function Home() {
     <div id='main'>
       <Head>
         <title>Alabhya Jindal&apos;s portfolio</title>
+        <meta
+          name='description'
+          content="Hey, I'm Alabhya. Welcome to my portfolio."
+        />
       </Head>
       <div className='text-slate-600 font-medium text-lg space-y-3 tracking-tight'>
         <p>
