@@ -14,7 +14,7 @@ export default function Home() {
       <div className='text-slate-600 font-medium text-lg space-y-3 tracking-tight'>
         <p>
           Hey, I&apos;m Alabhya. I live in Khliehriat, Meghalaya. I love
-          programming and have been doing it sporadically for over 10 years! I
+          programming and have been doing it sporadically for over 10 years. I
           got started with Logo and have worked with Visual Basic, Python, Java
           and C over the years. These days, my main focus is on frontend web
           development.
@@ -81,7 +81,7 @@ export default function Home() {
           </a>{' '}
           in the past.
         </p>
-        <p>I love running, reading books and drinking medium roast coffee!</p>
+        <p>I love running, reading books and drinking coffee!</p>
       </div>
       <div className='mt-8'>
         <h1 className='text-4xl font-sans font-semibold tracking-tighter'>
@@ -134,7 +134,7 @@ export default function Home() {
           >
             LinkedIn
           </a>
-          . The source code for all my projects are available on{' '}
+          . The source code for all my projects is available on{' '}
           <a
             className='link'
             target='_blank'

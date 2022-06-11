@@ -5,7 +5,7 @@ export default function Header() {
     <div id='header' className='py-4 px-4'>
       <Link href='/'>
         <a>
-          <h2 className='text-6xl font-sans font-semibold select-none tracking-tighter'>
+          <h2 className='text-5xl md:text-6xl font-sans font-semibold select-none tracking-tighter'>
             Alabhya Jindal
           </h2>
         </a>

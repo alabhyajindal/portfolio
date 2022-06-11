@@ -99,7 +99,7 @@ export default function Searchselect() {
             project, I hardcoded the keyboard keys which will perform the
             navigation actions. It looked like this:
           </p>
-          <code className='block'>
+          <code className='block text-base'>
             let scrollDownKey = &apos;s&apos;;
             <br />
             let scrollUpKey = &apos;w&apos;; <br />
@@ -112,12 +112,12 @@ export default function Searchselect() {
           </p>
           <p>
             At installation, a script runs which saves the default values for
-            the shortcut keys to the storage. This is done by using.{' '}
+            the shortcut keys to the storage. This is done by using{' '}
             <code>chrome.runtime.onInstalled</code>. Now, instead of specifying
-            the value of the keyboard shortcut directly, we refer the variable
+            the value of the keyboard shortcut directly, I referred the variable
             in the storage:
           </p>
-          <pre className='overflow-auto'>
+          <pre className='overflow-auto text-base'>
             <code>{storageCode}</code>
           </pre>
           <p>

@@ -46,7 +46,7 @@ export default function ProjectCard({ title, desc, page, img, stack }) {
         <p className='text-slate-600 font-medium text-lg tracking-tight'>
           {desc}
         </p>
-        <p className='text-slate-400 font-medium text-base tracking-tight mt-1'>
+        <p className='text-slate-500 font-medium text-base tracking-tight mt-1'>
           {stack}
         </p>
         <Link href={page}>
