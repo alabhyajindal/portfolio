@@ -148,7 +148,7 @@ export default function Visits() {
         </h2>
         <div className='text-slate-600 font-medium text-lg space-y-3 tracking-tight mt-2'>
           <p>
-            The details of the cards on the{' '}
+            Allowing users to create visits and update the{' '}
             <a
               className='link'
               href='https://visits.vercel.app/explore'
@@ -157,13 +157,17 @@ export default function Visits() {
             >
               Explore
             </a>{' '}
-            page are being fetched from a PostgreSQL database hosted on
-            Supabase. I am using the <code>getServerSideProps</code> function
-            provided by Next.js to fetch the data from the database on the
-            Server and pass it to the component rendering the cards. Fetching
-            the data on the server like this results in a fast user experience
-            compared to client-side data fetching (done using{' '}
-            <code>useEffect</code>, for example).
+            page immediately was the hardest part of the application. Here's how
+            I did it.
+          </p>
+          <p>
+            The details of the cards on the Explore page are being fetched from
+            a PostgreSQL database hosted on Supabase. I am using the{' '}
+            <code>getServerSideProps</code> function provided by Next.js to
+            fetch the data from the database on the Server and pass it to the
+            component rendering the cards. Fetching the data on the server like
+            this results in a fast user experience compared to client-side data
+            fetching (done using <code>useEffect</code>, for example).
           </p>
 
           <p>
