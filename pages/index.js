@@ -87,6 +87,7 @@ export default function Home() {
           <ProjectCard
             title='Visits'
             desc='An online platform to connect companies offering industrial visits with students seeking them.'
+            date='May 2022'
             page='/visits'
             img='/visits/landing.png'
             stack='Created with Next.js, JavaScript, PostgreSQL, Supabase,
@@ -95,6 +96,7 @@ export default function Home() {
           <ProjectCard
             title='Search Select'
             desc='A lightweight browser extension to navigate and view search results using keyboard shortcuts.'
+            date='April 2022'
             page='/searchselect'
             img='/searchselect/landing.png'
             stack='Created with JavaScript, HTML, CSS and the Chrome Web
