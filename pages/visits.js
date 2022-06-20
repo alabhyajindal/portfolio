@@ -157,8 +157,8 @@ export default function Visits() {
             >
               Explore
             </a>{' '}
-            page immediately was the hardest part of the application. Here's how
-            I did it.
+            page immediately was the hardest part of the application.
+            Here&apos;s how I did it.
           </p>
           <p>
             The details of the cards on the Explore page are being fetched from
