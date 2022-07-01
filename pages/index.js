@@ -11,9 +11,25 @@ export default function Home() {
         <p>
           Hey, I&apos;m Alabhya. I live in Khliehriat, Meghalaya. I love
           programming and have been doing it sporadically for over 10 years. I
-          got started with Logo and have worked with Visual Basic, Python, Java
-          and C over the years. These days, my main focus is on frontend web
-          development.
+          work at{' '}
+          <a
+            className='link'
+            target='_blank'
+            rel='noreferrer'
+            href='https://mayalabs.io/'
+          >
+            Maya Labs
+          </a>{' '}
+          as a Frontend Engineer. I graduated from{' '}
+          <a
+            className='link'
+            target='_blank'
+            rel='noreferrer'
+            href='https://christuniversity.in/'
+          >
+            Christ University
+          </a>{' '}
+          in 2020.
         </p>
         <p>
           Next.js, Tailwind CSS and Supabase are some of my favorite
@@ -37,45 +53,6 @@ export default function Home() {
             Twitter
           </a>
           .
-        </p>
-        <p>
-          I am currently a student of the Full Stack Development Bootcamp at{' '}
-          <a
-            className='link'
-            target='_blank'
-            rel='noreferrer'
-            href='https://devsnest.in/'
-          >
-            Devsnest
-          </a>
-          . I graduated from{' '}
-          <a
-            className='link'
-            target='_blank'
-            rel='noreferrer'
-            href='https://christuniversity.in/'
-          >
-            Christ University
-          </a>{' '}
-          in 2020. I have worked at{' '}
-          <a
-            className='link'
-            target='_blank'
-            rel='noreferrer'
-            href='https://www.zwende.com/'
-          >
-            Zwende
-          </a>{' '}
-          and{' '}
-          <a
-            className='link'
-            target='_blank'
-            rel='noreferrer'
-            href='https://www.jaaga.in/'
-          >
-            Jaaga
-          </a>{' '}
-          in the past.
         </p>
         <p>I love running, reading books and drinking coffee!</p>
       </div>
