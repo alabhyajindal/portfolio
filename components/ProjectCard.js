@@ -40,7 +40,7 @@ export default function ProjectCard({ title, desc, date, page, img, stack }) {
         </a>
       </Link>
       <div>
-        <h3 className='text-3xl mt-4 text-fuchsia-500 font-sans font-medium select-none tracking-tighter'>
+        <h3 className='text-3xl mt-4 text-fuchsia-500 font-sans font-medium select-none tracking-tight'>
           {title}
         </h3>
         <p className='text-slate-600 font-medium text-lg tracking-tight'>

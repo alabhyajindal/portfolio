@@ -13,7 +13,7 @@ export default function Searchselect() {
       <Head>
         <title>Search Select</title>
       </Head>
-      <h1 className='text-4xl text-fuchsia-500 font-sans font-semibold select-none tracking-tighter'>
+      <h1 className='text-4xl text-fuchsia-500 font-sans font-semibold select-none tracking-tight'>
         Search Select
       </h1>
       <div className='text-slate-600 font-medium text-lg space-y-3 tracking-tight mt-2'>
@@ -55,7 +55,7 @@ export default function Searchselect() {
         />
       </div>
       <div className='mt-8'>
-        <h2 className='text-3xl font-sans font-semibold select-none tracking-tighter'>
+        <h2 className='text-3xl font-sans font-semibold select-none tracking-tight'>
           Purpose
         </h2>
         <div className='text-slate-600 font-medium text-lg space-y-3 tracking-tight mt-2'>
@@ -89,7 +89,7 @@ export default function Searchselect() {
       </div>
 
       <div className='mt-8'>
-        <h2 className='text-3xl font-sans font-semibold select-none tracking-tighter'>
+        <h2 className='text-3xl font-sans font-semibold select-none tracking-tight'>
           Spotlight
         </h2>
         <div className='text-slate-600 font-medium text-lg space-y-3 tracking-tight mt-2'>
@@ -146,7 +146,7 @@ export default function Searchselect() {
       </div>
 
       <div className='mt-8'>
-        <h2 className='text-3xl font-sans font-semibold select-none tracking-tighter'>
+        <h2 className='text-3xl font-sans font-semibold select-none tracking-tight'>
           Current Status
         </h2>
         <div className='text-slate-600 font-medium text-lg space-y-3 tracking-tight mt-2'>
@@ -160,7 +160,7 @@ export default function Searchselect() {
       </div>
 
       <div className='mt-8'>
-        <h2 className='text-3xl font-sans font-semibold select-none tracking-tighter'>
+        <h2 className='text-3xl font-sans font-semibold select-none tracking-tight'>
           What I learned
         </h2>
         <div className='text-slate-600 font-medium text-lg space-y-3 tracking-tight mt-2'>
