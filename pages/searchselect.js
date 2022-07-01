@@ -108,14 +108,14 @@ export default function Searchselect() {
           <p>
             I realized later that different people might like to use different
             keys for navigation. I implemented this by using{' '}
-            <code>chrome.storage</code>.
+            <code className='text-base'>chrome.storage</code>.
           </p>
           <p>
             At installation, a script runs which saves the default values for
             the shortcut keys to the storage. This is done by using{' '}
-            <code>chrome.runtime.onInstalled</code>. Now, instead of specifying
-            the value of the keyboard shortcut directly, I referred the variable
-            in the storage:
+            <code className='text-base'>chrome.runtime.onInstalled</code>. Now,
+            instead of specifying the value of the keyboard shortcut directly, I
+            referred the variable in the storage:
           </p>
           <pre className='overflow-auto text-base'>
             <code>{storageCode}</code>
@@ -131,7 +131,7 @@ export default function Searchselect() {
               settings
             </a>{' '}
             page allows users to set custom shortcut keys by saving their
-            preferences to <code>chrome.storage</code>.
+            preferences to <code className='text-base'>chrome.storage</code>.
           </p>
         </div>
         <div className='mt-8 relative aspect-[16/9] bg-fuchsia-200 rounded-md shadow-md border'>
