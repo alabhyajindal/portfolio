@@ -9,9 +9,7 @@ export default function Home() {
       </Head>
       <div className='text-slate-600 font-medium text-lg space-y-3 tracking-tight'>
         <p>
-          Hey, I&apos;m Alabhya. I live in Khliehriat, Meghalaya. I love
-          programming and have been doing it sporadically for over 10 years. I
-          work at{' '}
+          Hey, I&apos;m Alabhya. I live in Bangalore and work at{' '}
           <a
             className='link'
             target='_blank'
@@ -20,41 +18,9 @@ export default function Home() {
           >
             Maya Labs
           </a>{' '}
-          as a Frontend Engineer. I graduated from{' '}
-          <a
-            className='link'
-            target='_blank'
-            rel='noreferrer'
-            href='https://christuniversity.in/'
-          >
-            Christ University
-          </a>{' '}
-          in 2020.
+          as a Frontend Engineer. I love running, reading books and drinking
+          coffee.
         </p>
-        <p>
-          Next.js, Tailwind CSS and Supabase are some of my favorite
-          technologies. I also try to contribute to Open Source. I consider this{' '}
-          <a
-            className='link'
-            target='_blank'
-            rel='noreferrer'
-            href='https://github.com/mdn/content/pull/15635'
-          >
-            PR
-          </a>{' '}
-          important. I am a big believer of learning in public and share my
-          progress on{' '}
-          <a
-            className='link'
-            target='_blank'
-            rel='noreferrer'
-            href='https://twitter.com/alabhyajindal'
-          >
-            Twitter
-          </a>
-          .
-        </p>
-        <p>I love running, reading books and drinking coffee!</p>
       </div>
       <div className='mt-8'>
         <h1 className='text-4xl font-sans font-semibold tracking-tight'>
