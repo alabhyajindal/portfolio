@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import ProjectCard from '../components/ProjectCard';
 
 export default function Home() {
@@ -26,7 +27,7 @@ export default function Home() {
         <h1 className='text-4xl font-sans font-semibold tracking-tight'>
           Projects
         </h1>
-        <div className='mt-6 space-y-8'>
+        {/* <div className='mt-6 space-y-8'>
           <ProjectCard
             title='Visits'
             desc='An online platform to connect companies offering industrial visits with students seeking them.'
@@ -45,6 +46,27 @@ export default function Home() {
             stack='Created with JavaScript, HTML, CSS and the Chrome Web
             APIs.'
           />
+        </div> */}
+        <div className='mt-2'>
+          <Link href='/visits'>
+            <a
+              className='text-2xl font-sans font-semibold tracking-tight text-fuchsia-500 hover:text-fuchsia-400
+            transition duration-100 inline-block
+            '
+            >
+              Visits
+            </a>
+          </Link>
+          <br />
+          <Link href='/searchselect'>
+            <a
+              className='text-2xl font-sans font-semibold tracking-tight text-fuchsia-500 hover:text-fuchsia-400
+             transition duration-100 inline-block mt-1
+             '
+            >
+              Search Select
+            </a>
+          </Link>
         </div>
       </div>
 
