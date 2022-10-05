@@ -4,7 +4,6 @@ import ProjectCard from '../components/ProjectCard';
 import { getAllPosts } from '../src/api';
 
 export default function Home({ posts }) {
-  console.log('👍 : file: index.js : line 7 : posts', posts);
   return (
     <div id='main'>
       <Head>

@@ -4,7 +4,6 @@ import { micromark } from 'micromark';
 
 const Post = ({ post }) => {
   let content = micromark(post.content);
-  console.log(content);
   return (
     <div>
       <Head>
