@@ -64,16 +64,20 @@ export default function Home({ posts }) {
           Posts
         </h1>
         <div className='mt-2'>
-          <Link href='/posts/prophet'>
-            <a
-              className='text-2xl font-sans font-semibold tracking-tight text-fuchsia-500 hover:text-fuchsia-400
+          {posts.map((post) => (
+            <div key={post.slug}>
+              <Link href={`/posts/${post.slug}`}>
+                <a
+                  className='text-2xl font-sans font-semibold tracking-tight text-fuchsia-500 hover:text-fuchsia-400
             transition duration-100 inline-block mb-1
             '
-            >
-              The Prophet - Book Review
-            </a>
-          </Link>
-          <br />
+                >
+                  {post.title}
+                </a>
+              </Link>
+              <br />
+            </div>
+          ))}
         </div>
       </div>
 
