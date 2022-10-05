@@ -3,14 +3,14 @@ import { getPostFromSlug, getSlugs } from '../../src/api';
 import { micromark } from 'micromark';
 
 const Post = ({ post }) => {
-  const content = micromark(post.content);
+  let content = micromark(post.content);
   console.log(content);
   return (
     <div>
       <Head>
         <title>{post.meta.title}</title>
       </Head>
-      <h1 className='text-4xl text-fuchsia-500 font-sans font-semibold select-none tracking-tight'>
+      <h1 className='text-4xl text-fuchsia-500 font-sans font-semibold select-none tracking-tight mb-4'>
         {post.meta.title}
       </h1>
       <div dangerouslySetInnerHTML={{ __html: content }} />
