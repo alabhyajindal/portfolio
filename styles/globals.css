@@ -17,7 +17,7 @@
   .icon {
     @apply h-6 hover:scale-110 active:scale-90 transition duration-100;
   }
-  h5 {
+  h2 {
     @apply text-3xl font-sans font-semibold select-none tracking-tight mt-6;
   }
   p {
