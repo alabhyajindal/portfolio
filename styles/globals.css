@@ -17,10 +17,10 @@
   .icon {
     @apply h-6 hover:scale-110 active:scale-90 transition duration-100;
   }
-  h2 {
+  /* h2 {
     @apply text-3xl font-sans font-semibold select-none tracking-tight mt-6;
   }
   p {
     @apply text-slate-600 font-medium text-lg space-y-3 tracking-tight mt-2;
-  }
+  } */
 }

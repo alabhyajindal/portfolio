@@ -58,7 +58,7 @@ export default function Home({ posts }) {
         </div>
       </div>
 
-      <div className='mt-8'>
+      {/* <div className='mt-8'>
         <h1 className='text-4xl font-sans font-semibold tracking-tight'>
           Posts
         </h1>
@@ -78,7 +78,7 @@ export default function Home({ posts }) {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
 
       <div className='mt-8'>
         <h1 className='text-4xl font-sans font-semibold tracking-tight'>
