@@ -29,14 +29,14 @@ export default function Home({ posts }) {
           Projects
         </h1>
         <div className='mt-6 space-y-8'>
-          <ProjectCard
+          {/* <ProjectCard
             title='Fast Flow'
             desc='A new way to create flow charts using only your keyboard.'
             date='July 2022'
             page='/fastflow'
             img='/fastflow/landing.png'
             stack='Created with React Flow, React and JavaScript.'
-          />
+          /> */}
           <ProjectCard
             title='Visits'
             desc='An online platform to connect companies offering industrial visits with students seeking them.'
